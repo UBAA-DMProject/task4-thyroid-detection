@@ -108,6 +108,8 @@ python tune_experiment.py \
 
 ### 查看实验材料
 
+按课程模板组织的任务四报告见 [报告正文](docs/任务四实验报告.md)与 [Word 版](docs/任务四实验报告.docx)。报告包含中英文摘要、方法、实际结果、图表与局限；作者信息待填写，探索性调参结果单独标注。
+
 仓库中的 [实验报告材料](reports/README.md) 保存了关键结果快照，无需运行训练即可查看：
 
 - [基线指标](reports/baseline_20261027/metrics.csv)与[混淆矩阵](reports/baseline_20261027/figures/confusion_matrix.png)。
