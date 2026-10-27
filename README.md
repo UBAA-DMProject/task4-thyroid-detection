@@ -106,9 +106,19 @@ python tune_experiment.py \
 
 基线检出 94 个患病样本中的 88 个，但误报较多。最高 F1 配置将误报从 114 个降至 29 个，同时漏报从 6 个增至 13 个。召回率约束配置检出 85 个患病样本、误报 39 个，体现了减少误报与保留召回率之间的取舍。
 
+### 查看实验材料
+
+仓库中的 [实验报告材料](reports/README.md) 保存了关键结果快照，无需运行训练即可查看：
+
+- [基线指标](reports/baseline_20261027/metrics.csv)与[混淆矩阵](reports/baseline_20261027/figures/confusion_matrix.png)。
+- [方案对比表](reports/exploratory_20261027/comparison.csv)与[全部 308 组搜索结果](reports/exploratory_20261027/search_results.csv)。
+- [最高 F1 方案摘要](reports/exploratory_20261027/best_f1/summary.json)与[召回率约束方案摘要](reports/exploratory_20261027/recall90/summary.json)。
+
+`reports/` 纳入版本管理，保留参数、环境版本、划分索引和图表；配置中的路径已转换为项目相对路径。模型文件和逐样本预测保留在本地 `results/` 中。
+
 ## 输出文件
 
-每次实验写入独立的 `results/` 子目录，已有目录不会被覆盖。结果文件不纳入版本管理，运行脚本后生成。
+每次实验写入独立的 `results/` 子目录，已有目录不会被覆盖。完整运行产物不纳入版本管理，运行脚本后生成；`reports/` 中的精选快照不会随重新运行自动更新。
 
 | 文件或目录 | 内容 |
 | --- | --- |

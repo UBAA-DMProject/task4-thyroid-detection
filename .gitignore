@@ -17,4 +17,5 @@ AGENTS.md
 
 # 实验产物与缓存
 results/
+reports/
 .cache/
