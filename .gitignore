@@ -14,3 +14,7 @@ docs/
 
 # 开发辅助文件
 AGENTS.md
+
+# 实验产物与缓存
+results/
+.cache/
